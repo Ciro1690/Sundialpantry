@@ -1,11 +1,20 @@
 {% extends 'base.html' %}
 {% block title %}Sundial Pantry{% endblock %}
 {% block content %}
+<img id="band" src="../static/images/dinner_band.png" alt="homepage">
 
 <div class="display-4 text-center mb-3">Dinner Parties</div>
-<div class="text-center">
-    <h2>Please get in touch to plan a small private dinner in your home!</h2>
-    <h5>Complete the form below to send a dinner party request</h5>
+<div class="text-center mx-4">
+    <p>
+        I look forward to working with you to create a special menu. I love to use the freshest local and responsibly sourced ingredients.</br>
+        Please fill out the form below to send me an email about your occasion.</br>
+    </p>
+    <ul style="list-style-type:none;">Dinner party ideas:
+        <li>Crab salad with belgian endive </li>
+        <li>Home-made tortelini in brodo</li>
+        <li>Salt baked bronzino</li>
+        <li>Paella party!</li>
+    </ul>
 </div>
 <form class="col-lg-6 offset-lg-3 my-5" method="POST">
     {{ form.hidden_tag() }}

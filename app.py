@@ -31,6 +31,18 @@ def photo_album():
 def info():
     return render_template("info.html")
 
+@app.route("/farmers-market")
+def farmers_market():
+    return render_template("farmers-market.html")
+
+@app.route("/special-orders")
+def special_orders():
+    return render_template("special-orders.html")
+    
+@app.route("/contact")
+def contact():
+    return render_template("contact.html")
+
 @app.route("/dinner-parties", methods=['GET', 'POST'])
 def dinner_parties():
     form = ContactForm()

@@ -1,24 +1,27 @@
 {% extends 'base.html' %}
 {% block title %}Sundial Pantry{% endblock %}
 {% block content %}
+    <img id="band" src="../static/images/homepage.photo.band.png" alt="homepage">
     <div class="row">
         <div class="col-4 img-with-text">
-            <img id="button" src="../static/images/farmers_market.png" alt="button">
-            <p class="text-center">Find me at the
-            Pacific Beach Farmer’s
-            Market</p>
+            <a class="nav-item nav-link mx-4" href="/farmers-market">
+                <img id="button" src="../static/images/farmers_market.png" alt="button">
+            </a>
+            <p class="text-center">Find me at the Pacific Beach Farmer’s Market</p>
         </div>
         <div class="col-4 img-with-text">
-            <img id="button" src="../static/images/dinner_parties.png" alt="button">
+            <a class="nav-item nav-link mx-4" href="/dinner-parties">
+                <img id="button" src="../static/images/dinner_parties.png" alt="button">
+            </a>
             <p class="text-center">Need a chef for a day?
-            Going on vacation and need a
-            travelling chef?</p>
+            Going on vacation and need a traveling chef?</p>
         </div>
         <div class="col-4 img-with-text">
-            <img id="button" src="../static/images/special_orders.png" alt="button">
+            <a class="nav-item nav-link mx-4" href="/special-orders">
+                <img id="button" src="../static/images/special_orders.png" alt="button">
+            </a>
             <p class="text-center">High quality
-            dinners to go, catering,
-            and baked goods.</p>
+            dinners to go, catering, and baked goods.</p>
         </div>
     </div>
 {% endblock %}
