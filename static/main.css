@@ -43,6 +43,14 @@ body {
     height: auto;
 }
 
+#home-button {
+  width: 400px;
+}
+
+#elise {
+  width: 100%;
+}
+
 .nav-link {
   font-size: 25px;
 }
